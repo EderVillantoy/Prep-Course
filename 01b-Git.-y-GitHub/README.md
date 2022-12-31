@@ -32,6 +32,7 @@
 
 Cuando trabajamos con Git nuestros archivos pueden vivir y moverse entre 4 diferentes estados (cuando trabajamos remoto pueden ser más estados, pero lo estudiaremos más adelante)
 
+
 - **Archivos** ***Tracked***: son los archivos que viven dentro de Git, no tienen cambios pendientes y sus últimas actualizaciones han sido guardadas en el repositorio gracias a los comandos git add y git commit.
 
 - **Archivos** ***Staged***: son archivos en staging. Viven dentro de Git y hay registro de ellos por que han sido afectados por el comando git add, aunque no sus últimos cambios. Git ya sabe de la existencia de estos últimos cambios, pero todavía no han sido guardados definitivamente en el repositorio por que falta ejecutar el comando git commit.
@@ -52,7 +53,7 @@ Recuerda que hay un caso muy raro donde los archivos tienen dos estados al mismo
 
 - `git commit`: nos ayuda a mover archivos de Unstaged a Tracked. Esta es una ocasión especial, los archivos han sido guardados o actualizados en el repositorio. Git nos pedira que dejemos un mensaje para recordar los cambios que hicimos y podemos usar el argumento -m para describirlo ( git commit -m "mensaje").
 
-- `git rm`: este comando necesita algunos de los argumentos para poder ejecutarse correctamente:
+- `git rm`: este comando necesita algunos de los argumentos para poder ejecutarse correctamente
 
 - `git rm --cached`: Mueve los archivos que le indiquemos al estado Untracked.
 - `git rm --force`: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).

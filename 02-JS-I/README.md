@@ -265,6 +265,8 @@ function logHola(nombre) {
 
 var miNombre = 'Antonio';
 logHola(miNombre);
+
+
 ```
 
 Podemos agregar múltiples argumentos colocando una coma entre ellos:
